@@ -1,6 +1,7 @@
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'; // not being used right now 
 import React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
 
 // Components
 import Home from './Components/home';
@@ -8,6 +9,8 @@ import Login from './Components/login';
 import Listings from './Components/listings';
 import HeebsComponent from './Components/heebscomp';
 import Fruits from './Components/fruit';
+
+
 
 
 function App() {
@@ -30,6 +33,7 @@ function App() {
       <Fruits name="bananas" color="yellow"/>
 
       <BrowserRouter>
+        <CssBaseline />
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/login' element={<Login />}/>
